@@ -90,3 +90,41 @@ function loadReviewsPage() {
             document.getElementById('main-content').innerHTML = reviewsHTML;
         });
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadMoviesPage();
+});
+
+function loadMoviesPage() {
+    const movies = [
+        {title: 'The Confession', year: 2024, img: 'path/to/image1.jpg'},
+        {title: 'Crawlers', year: 2024, img: 'path/to/image2.jpg'},
+        {title: 'Death Whisperer 2', year: 2024, img: 'path/to/image3.jpg'},
+        {title: 'Blink Twice', year: 2024, img: 'path/to/image4.jpg'},
+        {title: 'Deadpool & Wolverine', year: 2024, img: 'path/to/image5.jpg'},
+        {title: 'The Winter Witch', year: 2024, img: 'path/to/image6.jpg'},
+        {title: 'The Haunting of the Tower of London', year: 2024, img: 'path/to/image7.jpg'},
+        {title: 'Sleep with Your Eyes Open', year: 2024, img: 'path/to/image8.jpg'},
+        {title: 'Food, Inc. 2', year: 2024, img: 'path/to/image9.jpg'},
+        {title: 'Terror Zone', year: 2024, img: 'path/to/image10.jpg'},
+        {title: 'Balinsasayaw', year: 2024, img: 'path/to/image11.jpg'},
+        {title: 'Touch', year: 2024, img: 'path/to/image12.jpg'},
+        {title: 'Everything Puppies', year: 2024, img: 'path/to/image13.jpg'},
+        {title: 'Thelma the Unicorn', year: 2024, img: 'path/to/image14.jpg'},
+        {title: 'Hit Man', year: 2024, img: 'path/to/image15.jpg'},
+        {title: 'You Can\'t Run Forever', year: 2024, img: 'path/to/image16.jpg'}
+    ];
+
+    let moviesHTML = '';
+    movies.forEach(movie => {
+        moviesHTML += `
+            <div class="movie">
+                <img src="${movie.img}" alt="${movie.title}">
+                <h3>${movie.title}</h3>
+                <p>${movie.year}</p>
+            </div>
+        `;
+    });
+    document.querySelector('.movies-section').innerHTML = moviesHTML;
+}
