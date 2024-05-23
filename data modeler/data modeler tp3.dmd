@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="data modeler tp3" id="5383C8FE-5E73-9D11-6E4C-FBF9FBB8832F" version="3.5">
+<createdBy>Yuicn</createdBy>
+<createdTime>2024-05-22 22:37:31 UTC</createdTime>
+<ownerDesignName>data modeler tp3</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5383C8FE-5E73-9D11-6E4C-FBF9FBB8832F</designId>
+</OSDM_Design>
