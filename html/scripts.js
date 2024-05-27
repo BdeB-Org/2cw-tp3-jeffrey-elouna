@@ -98,22 +98,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function loadMoviesPage() {
     const movies = [
-        {title: 'The Confession', year: 2024, img: 'path/to/image1.jpg'},
-        {title: 'Crawlers', year: 2024, img: 'path/to/image2.jpg'},
-        {title: 'Death Whisperer 2', year: 2024, img: 'path/to/image3.jpg'},
-        {title: 'Blink Twice', year: 2024, img: 'path/to/image4.jpg'},
-        {title: 'Deadpool & Wolverine', year: 2024, img: 'path/to/image5.jpg'},
-        {title: 'The Winter Witch', year: 2024, img: 'path/to/image6.jpg'},
-        {title: 'The Haunting of the Tower of London', year: 2024, img: 'path/to/image7.jpg'},
-        {title: 'Sleep with Your Eyes Open', year: 2024, img: 'path/to/image8.jpg'},
-        {title: 'Food, Inc. 2', year: 2024, img: 'path/to/image9.jpg'},
-        {title: 'Terror Zone', year: 2024, img: 'path/to/image10.jpg'},
-        {title: 'Balinsasayaw', year: 2024, img: 'path/to/image11.jpg'},
-        {title: 'Touch', year: 2024, img: 'path/to/image12.jpg'},
-        {title: 'Everything Puppies', year: 2024, img: 'path/to/image13.jpg'},
-        {title: 'Thelma the Unicorn', year: 2024, img: 'path/to/image14.jpg'},
-        {title: 'Hit Man', year: 2024, img: 'path/to/image15.jpg'},
-        {title: 'You Can\'t Run Forever', year: 2024, img: 'path/to/image16.jpg'}
+        {title: 'The Confession', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Crawlers', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Death Whisperer 2', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Blink Twice', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Deadpool & Wolverine', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'The Winter Witch', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'The Haunting of the Tower of London', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Sleep with Your Eyes Open', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Food, Inc. 2', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Terror Zone', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Balinsasayaw', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Touch', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Everything Puppies', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Thelma the Unicorn', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Hit Man', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
     ];
 
     let moviesHTML = '';
