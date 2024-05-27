@@ -44,11 +44,15 @@ main {
     background-color: #fff;
     width: calc(25% - 20px); /* Adjust the width as needed */
     box-sizing: border-box;
+    overflow: hidden; /* Ensure any overflow is hidden */
+    text-align: center; /* Center align text */
 }
 
 .movie img {
     max-width: 100%;
     height: auto;
+    display: block; /* Ensure the image is a block element */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 .movie-info {
