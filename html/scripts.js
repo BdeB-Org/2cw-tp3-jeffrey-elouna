@@ -98,21 +98,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function loadMoviesPage() {
     const movies = [
-        {title: 'The Confession', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Crawlers', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Death Whisperer 2', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Blink Twice', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Deadpool & Wolverine', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'The Winter Witch', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'The Haunting of the Tower of London', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Sleep with Your Eyes Open', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Food, Inc. 2', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Terror Zone', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Balinsasayaw', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Touch', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Everything Puppies', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Thelma the Unicorn', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
-        {title: 'Hit Man', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images'},
+        {title: 'Inception', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\inception.jpg'},
+        {title: 'The Matrix', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\matrix.jpg'},
+        {title: 'Interstellar', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\interstellar.jpg'},
+        {title: 'The GodFather', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\godfather.jpg'},
+        {title: 'The Dark Knight', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\the dark knight.jpg'},
+        {title: 'Pulp Fiction', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\pulp fiction.jpg'},
+        {title: 'schindler\s', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\SCH list.jpg'},
+        {title: 'Fight Club', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\fight club.jpg'},
+        {title: 'Forrest Gump', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\forrest gump.jpg'},
+        {title: 'The Shawshank Redemption', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\shawshank redemption.jpg'},
     ];
 
     let moviesHTML = '';
