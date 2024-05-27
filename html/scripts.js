@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function loadMoviesPage() {
     const movies = [
-        {title: 'Inception', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\inception.jpg'},
-        {title: 'The Matrix', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\matrix.jpg'},
-        {title: 'Interstellar', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\interstellar.jpg'},
-        {title: 'The GodFather', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\godfather.jpg'},
-        {title: 'The Dark Knight', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\the dark knight.jpg'},
-        {title: 'Pulp Fiction', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\pulp fiction.jpg'},
-        {title: 'Schindler\'s List', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\SCH list.jpg'},
-        {title: 'Fight Club', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\fight club.jpg'},
-        {title: 'Forrest Gump', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\forrest gump.jpg'},
-        {title: 'The Shawshank Redemption', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\shawshank redemption.jpg'},
+        {title: 'Inception', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/inception.jpg'},
+        {title: 'The Matrix', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/matrix.jpg'},
+        {title: 'Interstellar', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/interstellar.jpg'},
+        {title: 'The GodFather', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/godfather.jpg'},
+        {title: 'The Dark Knight', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/the dark knight.jpg'},
+        {title: 'Pulp Fiction', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/pulp fiction.jpg'},
+        {title: 'Schindler\'s List', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/SCH list.jpg'},
+        {title: 'Fight Club', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/fight club.jpg'},
+        {title: 'Forrest Gump', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/forrest gump.jpg'},
+        {title: 'The Shawshank Redemption', year: 2024, img: 'https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/html/index.html/images/shawshank redemption.jpg'},
     ];
 
     let moviesHTML = '<h2>Movies</h2><div class="movie-gallery">';
