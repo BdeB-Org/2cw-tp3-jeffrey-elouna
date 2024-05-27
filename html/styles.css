@@ -34,38 +34,23 @@ main {
 .movie-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .movie {
-    position: relative;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
     background-color: #fff;
+    width: calc(25% - 20px); /* Adjust the width as needed */
+    box-sizing: border-box;
 }
 
 .movie img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 .movie-info {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
     text-align: center;
-    transition: background 0.2s;
-}
-
-.movie:hover {
-    transform: scale(1.05);
-}
-
-.movie:hover .movie-info {
-    background: rgba(0, 0, 0, 0.9);
 }
