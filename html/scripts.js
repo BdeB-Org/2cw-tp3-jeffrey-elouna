@@ -12,7 +12,7 @@ function loadMoviesPage() {
         {title: 'Pulp Fiction', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\pulp fiction.jpg'},
         {title: 'Schindler\'s List', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\SCH list.jpg'},
         {title: 'Fight Club', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\fight club.jpg'},
-        {title: 'Forrest Gump', year: 2024, img: 'C:\Users\Yuicn\OneDrive\\Documents\tp3\cw-tp3-jeffrey-elouna\images\forrest gump.jpg'},
+        {title: 'Forrest Gump', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\forrest gump.jpg'},
         {title: 'The Shawshank Redemption', year: 2024, img: 'C:\Users\Yuicn\OneDrive\Documents\tp3\cw-tp3-jeffrey-elouna\images\shawshank redemption.jpg'},
     ];
 
