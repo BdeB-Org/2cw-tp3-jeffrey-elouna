@@ -32,26 +32,23 @@ main {
 }
 
 .movie-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the min and max widths as needed */
+    gap: 20px;
 }
 
 .movie {
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-    text-align: center;
+    max-width: 300px; /* Adjust based on your layout needs */
+  margin: 20px auto; /* Center the movie divs */
+  text-align: center; /* Center the alt text */
 }
 
 .movie.img {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Ensures images take up the full width of their grid cell */
+  height: auto;
 }
 
 .movie-info {
-    text-align: center;
+    text-align: center; /* Center the text below the image */
+  margin-top: 10px;
 }
