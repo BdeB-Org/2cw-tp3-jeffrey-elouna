@@ -43,12 +43,13 @@ main {
     padding: 10px;
     background-color: #fff;
     width: 200px;
+    height: 100px;
     text-align: center;
 }
 
 .movie img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .movie-info {
