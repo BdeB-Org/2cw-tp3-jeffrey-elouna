@@ -31,7 +31,11 @@ main {
     padding: 20px;
 }
 
-
+.movie-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 .movie {
     border: 1px solid #ccc;
@@ -43,10 +47,7 @@ main {
     text-align: center;
 }
 
-.movie.img {
-    width: 200px;
-    height: 400px;
-}
+
 
 .movie-info {
     text-align: center;
