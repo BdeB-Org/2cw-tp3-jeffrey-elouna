@@ -27,9 +27,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
-}
+
 
 .movie-gallery {
     display: flex;
@@ -47,7 +45,10 @@ main {
     text-align: center;
 }
 
-
+.movie.img {
+    width: 200px;
+    height: 400px;
+}
 
 .movie-info {
     text-align: center;
