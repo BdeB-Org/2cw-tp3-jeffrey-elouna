@@ -31,11 +31,7 @@ main {
     padding: 20px;
 }
 
-.movie-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+
 
 .movie {
     border: 1px solid #ccc;
