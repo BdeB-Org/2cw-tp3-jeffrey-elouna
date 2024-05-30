@@ -46,7 +46,7 @@ function loadReviewsPage() {
         {title: 'The Shawshank Redemption', review: 'A story of hope and friendship.'},
     ];
 
-    let reviewsHTML = '<h2>Reviews</h2>';
+    let reviewsHTML = '<h2>Reviews</h2><div class="reviews-section">';
     reviews.forEach(review => {
         reviewsHTML += `
             <div class="review">
