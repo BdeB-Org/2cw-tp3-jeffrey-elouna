@@ -59,3 +59,23 @@ main {
 .movie-info {
     text-align: center;
 }
+
+.reviews-section {
+    padding: 20px;
+}
+
+.review {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.review h3 {
+    margin-top: 0;
+}
+
+.review p {
+    margin-bottom: 0;
+}
+

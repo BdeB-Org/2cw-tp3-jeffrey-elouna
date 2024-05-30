@@ -31,3 +31,29 @@ function loadMoviesPage() {
     moviesHTML += '</div>';
     document.querySelector('.movies-section').innerHTML = moviesHTML;
 }
+
+function loadReviewsPage() {
+    const reviews = [
+        {title: 'Inception', review: 'Amazing movie with a complex plot!'},
+        {title: 'The Matrix', review: 'A groundbreaking sci-fi film.'},
+        {title: 'Interstellar', review: 'A visually stunning and emotionally powerful film.'},
+        {title: 'The GodFather', review: 'An absolute classic. A must-watch.'},
+        {title: 'The Dark Knight', review: 'Heath Ledger\'s Joker is unforgettable.'},
+        {title: 'Pulp Fiction', review: 'Quentin Tarantino at his best.'},
+        {title: 'Schindler\'s List', review: 'A harrowing but essential film.'},
+        {title: 'Fight Club', review: 'A dark and thought-provoking movie.'},
+        {title: 'Forrest Gump', review: 'Heartwarming and inspirational.'},
+        {title: 'The Shawshank Redemption', review: 'A story of hope and friendship.'},
+    ];
+
+    let reviewsHTML = '<h2>Reviews</h2>';
+    reviews.forEach(review => {
+        reviewsHTML += `
+            <div class="review">
+                <h3>${review.title}</h3>
+                <p>${review.review}</p>
+            </div>
+        `;
+    });
+    document.querySelector('.reviews-section').innerHTML = reviewsHTML;
+}
