@@ -24,7 +24,6 @@ function loadMoviesPage() {
                 <div class="movie-info">
                     <h3>${movie.title}</h3>
                     <p>${movie.year} | Movie</p>
-                    <p>${movie.genre} | Movie</p>
                 </div>
             </div>
         `;
