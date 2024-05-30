@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Loading reviews page');  // Debugging line
         loadReviewsPage();
     }
+
+    const reviewForm = document.getElementById('review-form');
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', handleReviewSubmit);
+    }
 });
 
 function loadMoviesPage() {
@@ -65,7 +70,7 @@ function loadReviewsPage() {
                 <p>${review.review}</p>
                 <div class="rating">
                     ${[5, 4, 3, 2, 1].map(r => `
-                        <input type="radio" id="star${r}-${review.title}" name="rating-${review.title}" value="${r}" ${r === review.rating ? 'checked' : ''}>
+                        <input type="radio" id="star${r}-${review.title}" name="rating-${review.title}" value="${r}" ${r === review.rating ? 'checked' : ''} disabled>
                         <label for="star${r}-${review.title}">&#9733;</label>
                     `).join('')}
                 </div>
@@ -73,4 +78,40 @@ function loadReviewsPage() {
         `;
     });
     document.querySelector('.reviews-section').innerHTML = reviewsHTML;
+}
+
+function handleReviewSubmit(event) {
+    event.preventDefault();
+
+    const title = document.getElementById('movie-title').value;
+    const review = document.getElementById('movie-review').value;
+    const rating = document.querySelector('input[name="rating"]:checked').value;
+
+    const newReview = {
+        title: title,
+        review: review,
+        rating: parseInt(rating)
+    };
+
+    addReview(newReview);
+    event.target.reset();
+}
+
+function addReview(review) {
+    const reviewsSection = document.querySelector('.reviews-section');
+    
+    const reviewHTML = `
+        <div class="review">
+            <h3>${review.title}</h3>
+            <p>${review.review}</p>
+            <div class="rating">
+                ${[5, 4, 3, 2, 1].map(r => `
+                    <input type="radio" id="star${r}-${review.title}" name="rating-${review.title}" value="${r}" ${r === review.rating ? 'checked' : ''} disabled>
+                    <label for="star${r}-${review.title}">&#9733;</label>
+                `).join('')}
+            </div>
+        </div>
+    `;
+    
+    reviewsSection.insertAdjacentHTML('beforeend', reviewHTML);
 }

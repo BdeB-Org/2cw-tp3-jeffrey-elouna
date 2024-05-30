@@ -112,3 +112,57 @@ main {
 }
 
 
+
+.submit-review-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.submit-review-section h2 {
+    margin-top: 0;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#review-form label {
+    margin-top: 10px;
+}
+
+#review-form input[type="text"],
+#review-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#review-form .rating {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+#review-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#review-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
