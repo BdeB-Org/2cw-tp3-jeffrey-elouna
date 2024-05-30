@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    loadMoviesPage();
-    loadReviewsPage(); // Add this line to load reviews when the page loads
+    loadReviewsPage();
 });
 
 function loadReviewsPage() {
@@ -58,33 +57,27 @@ function loadReviewsPage() {
             year: 1993,
             genre: 'Biography, Drama, History',
             img: "https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/images/schindlers_list.jpg",
-            review: 'A powerful and moving historical drama.',
-            rating: 5
-        },
-        {
-            title: 'Fight Club',
-            year: 1999,
-            genre: 'Drama',
-            img: "https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/images/fight_club.jpg",
-            review: 'A thought-provoking and intense film.',
-            rating: 4.6
-        },
-        {
-            title: 'Forrest Gump',
-            year: 1994,
-            genre: 'Drama, Romance',
-            img: "https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/images/forrest_gump.jpg",
-            review: 'A heartwarming and inspirational story.',
-            rating: 4.8
-        },
-        {
-            title: 'The Shawshank Redemption',
-            year: 1994,
-            genre: 'Drama',
-            img: "https://bdeb-org.github.io/2cw-tp3-jeffrey-elouna/images/shawshank_redemption.jpg",
-            review: 'A timeless story of hope and friendship.',
+            review: 'A harrowing and powerful historical drama.',
             rating: 5
         }
     ];
 
-        let reviewsHTML; }
+    const reviewsContainer = document.getElementById('reviews');
+    
+    reviews.forEach(review => {
+        const reviewElement = document.createElement('div');
+        reviewElement.className = 'review';
+
+        reviewElement.innerHTML = `
+            <img src="${review.img}" alt="${review.title}">
+            <div class="movie-details">
+                <h3>${review.title} (${review.year})</h3>
+                <p><strong>Genre:</strong> ${review.genre}</p>
+                <p><strong>Review:</strong> ${review.review}</p>
+                <p><strong>Rating:</strong> ${review.rating} / 5</p>
+            </div>
+        `;
+
+        reviewsContainer.appendChild(reviewElement);
+    });
+}
