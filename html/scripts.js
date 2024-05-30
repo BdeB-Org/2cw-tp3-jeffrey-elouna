@@ -45,16 +45,16 @@ function loadReviewsPage() {
     console.log('Executing loadReviewsPage');  // Debugging line
 
     const reviews = [
-        {title: 'Inception', review: 'Amazing movie with a complex plot!'},
-        {title: 'The Matrix', review: 'A groundbreaking sci-fi film.'},
-        {title: 'Interstellar', review: 'A visually stunning and emotionally powerful film.'},
-        {title: 'The GodFather', review: 'An absolute classic. A must-watch.'},
-        {title: 'The Dark Knight', review: 'Heath Ledger\'s Joker is unforgettable.'},
-        {title: 'Pulp Fiction', review: 'Quentin Tarantino at his best.'},
-        {title: 'Schindler\'s List', review: 'A harrowing but essential film.'},
-        {title: 'Fight Club', review: 'A dark and thought-provoking movie.'},
-        {title: 'Forrest Gump', review: 'Heartwarming and inspirational.'},
-        {title: 'The Shawshank Redemption', review: 'A story of hope and friendship.'},
+        {title: 'Inception', review: 'Amazing movie with a complex plot!', rating: 5},
+        {title: 'The Matrix', review: 'A groundbreaking sci-fi film.', rating: 4},
+        {title: 'Interstellar', review: 'A visually stunning and emotionally powerful film.', rating: 5},
+        {title: 'The GodFather', review: 'An absolute classic. A must-watch.', rating: 5},
+        {title: 'The Dark Knight', review: 'Heath Ledger\'s Joker is unforgettable.', rating: 5},
+        {title: 'Pulp Fiction', review: 'Quentin Tarantino at his best.', rating: 4},
+        {title: 'Schindler\'s List', review: 'A harrowing but essential film.', rating: 5},
+        {title: 'Fight Club', review: 'A dark and thought-provoking movie.', rating: 4},
+        {title: 'Forrest Gump', review: 'Heartwarming and inspirational.', rating: 5},
+        {title: 'The Shawshank Redemption', review: 'A story of hope and friendship.', rating: 5},
     ];
 
     let reviewsHTML = '<h2>Reviews</h2>';
@@ -63,6 +63,12 @@ function loadReviewsPage() {
             <div class="review">
                 <h3>${review.title}</h3>
                 <p>${review.review}</p>
+                <div class="rating">
+                    ${[5, 4, 3, 2, 1].map(r => `
+                        <input type="radio" id="star${r}-${review.title}" name="rating-${review.title}" value="${r}" ${r === review.rating ? 'checked' : ''}>
+                        <label for="star${r}-${review.title}">&#9733;</label>
+                    `).join('')}
+                </div>
             </div>
         `;
     });

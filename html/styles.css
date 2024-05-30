@@ -60,6 +60,7 @@ main {
     text-align: center;
 }
 
+
 .reviews-section {
     padding: 20px;
 }
@@ -69,6 +70,11 @@ main {
     margin: 10px 0;
     padding: 10px;
     background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.review:hover {
+    transform: scale(1.05);
 }
 
 .review h3 {
@@ -78,4 +84,31 @@ main {
 .review p {
     margin-bottom: 0;
 }
+
+
+.rating {
+    display: flex;
+    direction: row-reverse;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.rating input:checked ~ label,
+.rating input:hover ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
 
