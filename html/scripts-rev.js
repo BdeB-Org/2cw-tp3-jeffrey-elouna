@@ -66,18 +66,34 @@ function loadReviewsPage() {
     
     reviews.forEach(review => {
         const reviewElement = document.createElement('div');
-        reviewElement.className = 'review';
-
-        reviewElement.innerHTML = `
-            <img src="${review.img}" alt="${review.title}">
-            <div class="movie-details">
-                <h3>${review.title} (${review.year})</h3>
-                <p><strong>Genre:</strong> ${review.genre}</p>
-                <p><strong>Review:</strong> ${review.review}</p>
-                <p><strong>Rating:</strong> ${review.rating} / 5</p>
-            </div>
-        `;
-
+        reviewElement.classList.add('review');
+        
+        const imgElement = document.createElement('img');
+        imgElement.src = review.img;
+        imgElement.alt = review.title;
+        
+        const titleElement = document.createElement('h3');
+        titleElement.textContent = review.title;
+        
+        const yearElement = document.createElement('p');
+        yearElement.textContent = `Year: ${review.year}`;
+        
+        const genreElement = document.createElement('p');
+        genreElement.textContent = `Genre: ${review.genre}`;
+        
+        const reviewTextElement = document.createElement('p');
+        reviewTextElement.textContent = review.review;
+        
+        const ratingElement = document.createElement('p');
+        ratingElement.textContent = `Rating: ${review.rating}`;
+        
+        reviewElement.appendChild(imgElement);
+        reviewElement.appendChild(titleElement);
+        reviewElement.appendChild(yearElement);
+        reviewElement.appendChild(genreElement);
+        reviewElement.appendChild(reviewTextElement);
+        reviewElement.appendChild(ratingElement);
+        
         reviewsContainer.appendChild(reviewElement);
     });
 }
