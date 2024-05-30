@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    loadMoviesPage();
+    console.log('DOM fully loaded and parsed');  // Debugging line
+
+    if (document.querySelector('.movies-section')) {
+        console.log('Loading movies page');  // Debugging line
+        loadMoviesPage();
+    }
+    if (document.querySelector('.reviews-section')) {
+        console.log('Loading reviews page');  // Debugging line
+        loadReviewsPage();
+    }
 });
 
 function loadMoviesPage() {
@@ -33,6 +42,8 @@ function loadMoviesPage() {
 }
 
 function loadReviewsPage() {
+    console.log('Executing loadReviewsPage');  // Debugging line
+
     const reviews = [
         {title: 'Inception', review: 'Amazing movie with a complex plot!'},
         {title: 'The Matrix', review: 'A groundbreaking sci-fi film.'},
@@ -46,7 +57,7 @@ function loadReviewsPage() {
         {title: 'The Shawshank Redemption', review: 'A story of hope and friendship.'},
     ];
 
-    let reviewsHTML = '<h2>Reviews</h2><div class="reviews-section">';
+    let reviewsHTML = '<h2>Reviews</h2>';
     reviews.forEach(review => {
         reviewsHTML += `
             <div class="review">
